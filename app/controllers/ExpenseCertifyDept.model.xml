@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="ExpenseCertifyDept" alias="ExpenseCertifyDept" created="2019-04-09T10:51:20" modified="2019-04-09T12:29:45" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="certify_dept_code" fieldName="CertifyDeptCode" label="Certify Dept Code" />
+    <column name="created_date" fieldName="CreatedDate" label="Created Date" format="g" />
+    <column name="created_by" fieldName="CreatedBy" label="Created By" />
+    <column name="isActive" fieldName="isActive" label="is Active" />
+    <column name="description" fieldName="Description" label="Description" />
+  </columns>
+</dataModel>

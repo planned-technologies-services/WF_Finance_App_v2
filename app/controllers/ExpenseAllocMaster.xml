@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="ExpenseAllocMaster" conflictDetection="overwriteChanges" label="Expense Alloc Master" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"ExpenseAllocMaster"."eallocmasterid" "Eallocmasterid"
+	,"ExpenseAllocMaster"."allocation_company_code" "AllocationCompanyCode"
+	,"ExpenseAllocMaster"."company_bank_code" "CompanyBankCode"
+	,"ExpenseAllocMaster"."allocation_percentage" "AllocationPercentage"
+	,"ExpenseAllocMaster"."credit_glcode" "CreditGlcode"
+	,"ExpenseAllocMaster"."br_bank_code" "BrBankCode"
+	,"ExpenseAllocMaster"."isactive" "Isactive"
+	,"ExpenseAllocMaster"."created_date" "CreatedDate"
+	,"ExpenseAllocMaster"."fk_certify_dept_code" "fkCertifyDeptCode"
+	,"fk_certify_dept_code"."created_date" "fkCertifyDeptCodeCreatedDate"
+	,"fk_certify_dept_code"."created_by" "fkCertifyDeptCodeCreatedby"
+	,"fk_certify_dept_code"."isActive" "fkCertifyDeptCodeIsactive"
+	,"fk_certify_dept_code"."description" "fkCertifyDeptCodeDescription"
+from "dbo"."ExpenseAllocMaster" "ExpenseAllocMaster"
+	left join "dbo"."ExpenseCertifyDept" "fk_certify_dept_code" on "ExpenseAllocMaster"."fk_certify_dept_code" = "fk_certify_dept_code"."certify_dept_code"
+]]></text>
+    </command>
+    <command id="eallocmasteridIdentityCommand" type="Text" event="Inserted">
+      <text><![CDATA[select @@identity]]></text>
+      <output>
+        <fieldOutput fieldName="Eallocmasterid" />
+      </output>
+    </command>
+  </commands>
+  <fields>
+    <field name="Eallocmasterid" type="Int32" allowNulls="false" isPrimaryKey="true" label="ID" readOnly="true" />
+    <field name="AllocationCompanyCode" type="String" allowNulls="false" label="Allocation Company Code" length="3" showInSummary="true">
+      <items style="DropDownList">
+        <item value="CLI" text="CLI" />
+        <item value="PBS" text="PBS" />
+        <item value="PLS" text="PLS" />
+        <item value="PSR" text="PSR" />
+        <item value="PSS" text="PSS" />
+        <item value="PTS" text="PTS" />
+      </items>
+    </field>
+    <field name="CompanyBankCode" type="String" label="Company Bank Code" length="1" showInSummary="true" />
+    <field name="AllocationPercentage" type="Decimal" allowNulls="false" label="Allocation Percentage" showInSummary="true" />
+    <field name="CreditGlcode" type="String" label="Credit GL Code" length="7" showInSummary="true" />
+    <field name="BrBankCode" type="String" allowNulls="false" label="BR Bank Code" length="1" showInSummary="true" />
+    <field name="Isactive" type="String" allowNulls="false" default="('Y')" label="Active?" length="1">
+      <items style="RadioButtonList">
+        <item value="Y" text="Yes" />
+        <item value="N" text="No" />
+      </items>
+    </field>
+    <field name="CreatedDate" type="DateTime" dataFormatString="g" default="(getdate())" label="Created Date" />
+    <field name="fkCertifyDeptCode" type="String" label="Certify Dept Code" length="10">
+      <items style="Lookup" dataController="ExpenseCertifyDept" newDataView="createForm1" dataValueField="CertifyDeptCode" dataTextField="CertifyDeptCode" dataView="gridActive" />
+    </field>
+    <field name="fkCertifyDeptCodeCreatedDate" type="DateTime" readOnly="true" dataFormatString="g" label="Certify Dept Code Created Date" />
+    <field name="fkCertifyDeptCodeCreatedby" type="String" readOnly="true" label="Certify Dept Code Created by" length="50" />
+    <field name="fkCertifyDeptCodeIsactive" type="String" readOnly="true" label="Certify Dept Code Is Active?" length="1" />
+    <field name="fkCertifyDeptCodeDescription" type="String" readOnly="true" label="fk Certify Dept Code Description" length="50" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Expense Alloc Master">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="AllocationCompanyCode" columns="3" />
+        <dataField fieldName="fkCertifyDeptCode" columns="10" />
+        <dataField fieldName="CompanyBankCode" columns="1" />
+        <dataField fieldName="AllocationPercentage" columns="15" />
+        <dataField fieldName="CreditGlcode" columns="7" />
+        <dataField fieldName="BrBankCode" columns="1" />
+        <dataField fieldName="Isactive" columns="1" />
+        <dataField fieldName="CreatedDate" columns="20" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Expense Alloc Master">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Expense Alloc Master" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="fkCertifyDeptCode" columns="10" />
+            <dataField fieldName="AllocationCompanyCode" columns="3" />
+            <dataField fieldName="CompanyBankCode" columns="1" />
+            <dataField fieldName="AllocationPercentage" columns="15" />
+            <dataField fieldName="CreditGlcode" columns="7" />
+            <dataField fieldName="BrBankCode" columns="1" />
+            <dataField fieldName="Isactive" columns="1" />
+            <dataField fieldName="CreatedDate" columns="20" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New Expense Alloc Master">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="fkCertifyDeptCode" columns="10" />
+            <dataField fieldName="AllocationCompanyCode" columns="3" />
+            <dataField fieldName="CompanyBankCode" columns="1" />
+            <dataField fieldName="AllocationPercentage" columns="15" />
+            <dataField fieldName="CreditGlcode" columns="7" />
+            <dataField fieldName="BrBankCode" columns="1" />
+            <dataField fieldName="Isactive" columns="1" />
+            <dataField fieldName="CreatedDate" columns="20" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" commandArgument="Save" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" commandArgument="Save" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" commandArgument="SaveAndNew" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenLastCommandArgument="Save" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenClientScript="this.hasDetails()" />
+      <action id="a14" whenLastCommandName="Insert" whenLastCommandArgument="SaveAndNew" commandName="New" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+      <action id="a2" />
+      <action id="a3" commandName="ExportRowset" />
+      <action id="a4" commandName="ExportRss" />
+      <action id="a5" />
+      <action id="a6" commandName="Import" commandArgument="createForm1" />
+      <action id="a7" commandName="DataSheet" />
+      <action id="a8" commandName="Grid" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

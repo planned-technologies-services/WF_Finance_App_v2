@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="^SiteHome^Home^SiteHome^" description="" url="~/index.html">
+    <siteMapNode title="^HomePath^Home^HomePath^" description="^HomeDesc^Application home page^HomeDesc^" url="~/pages/home" cssClass="Wide" />
+    <siteMapNode title="Expense Alloc Master" description="View Expense Alloc Master" url="~/pages/expense-alloc-master" />
+    <siteMapNode title="Expense Certify Dept" description="View Expense Certify Dept" url="~/pages/expense-certify-dept" />
+    <siteMapNode title="Site Content" description="View Site Content" url="~/pages/site-content" />
+  </siteMapNode>
+</siteMap>

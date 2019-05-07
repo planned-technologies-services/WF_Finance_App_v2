@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="ExpenseAllocMaster" alias="ExpenseAllocMaster" created="2019-04-08T16:25:43" modified="2019-04-09T12:30:44" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="fk_certify_dept_code" parentTableSchema="dbo" parentTableName="ExpenseCertifyDept" x="370" y="20">
+      <foreignKeyColumn columnName="fk_certify_dept_code" parentColumnName="certify_dept_code" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="eallocmasterid" fieldName="Eallocmasterid" label="ID" />
+    <column name="allocation_company_code" fieldName="AllocationCompanyCode" label="Allocation Company Code" />
+    <column name="company_bank_code" fieldName="CompanyBankCode" label="Company Bank Code" />
+    <column name="allocation_percentage" fieldName="AllocationPercentage" label="Allocation Percentage" />
+    <column name="credit_glcode" fieldName="CreditGlcode" label="Credit Glcode" />
+    <column name="br_bank_code" fieldName="BrBankCode" label="BR Bank Code" />
+    <column name="isactive" fieldName="Isactive" label="Is Active?" />
+    <column name="created_date" fieldName="CreatedDate" label="Created Date" format="g" />
+    <column name="fk_certify_dept_code" fieldName="fkCertifyDeptCode" label="Certify Dept Code" aliasColumnName="created_date" aliasForeignKey="fk_certify_dept_code" />
+    <column name="created_date" fieldName="fkCertifyDeptCodeCreatedDate" label="Certify Dept Code Created Date" foreignKey="fk_certify_dept_code" format="g" />
+    <column name="created_by" fieldName="fkCertifyDeptCodeCreatedby" label="Certify Dept Code Created by" foreignKey="fk_certify_dept_code" />
+    <column name="isActive" fieldName="fkCertifyDeptCodeIsactive" label="Certify Dept Code Is Active?" foreignKey="fk_certify_dept_code" />
+    <column name="description" fieldName="fkCertifyDeptCodeDescription" label="fk Certify Dept Code Description" foreignKey="fk_certify_dept_code" />
+  </columns>
+</dataModel>

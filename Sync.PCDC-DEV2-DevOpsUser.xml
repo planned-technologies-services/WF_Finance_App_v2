@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?><logs><log type="Controllers"><c y="NodeSet" t="2019-04-08T16:31:28"><controller name="ExpenseAllocMaster" />
+<field name="AllocationCompanyCode" />
+<insert type="item">
+  <Value>CLI</Value>
+  <Text>CLI</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:31:40"><controller name="ExpenseAllocMaster" />
+<field name="AllocationCompanyCode" />
+<insert type="item">
+  <Value>PBS</Value>
+  <Text>PBS</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:31:56"><controller name="ExpenseAllocMaster" />
+<field name="AllocationCompanyCode" />
+<insert type="item">
+  <Value>PLS</Value>
+  <Text>PLS</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:32:06"><controller name="ExpenseAllocMaster" />
+<field name="AllocationCompanyCode" />
+<insert type="item">
+  <Value>PSR</Value>
+  <Text>PSR</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:32:22"><controller name="ExpenseAllocMaster" />
+<field name="AllocationCompanyCode" />
+<insert type="item">
+  <Value>PSS</Value>
+  <Text>PSS</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:32:47"><controller name="ExpenseAllocMaster" />
+<field name="AllocationCompanyCode" />
+<insert type="item">
+  <Value>PTS</Value>
+  <Text>PTS</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:32:59"><controller name="ExpenseAllocMaster" />
+<field name="Isactive" />
+<insert type="item">
+  <Value>Y</Value>
+  <Text>Yes</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:33:06"><controller name="ExpenseAllocMaster" />
+<field name="Isactive" />
+<insert type="item">
+  <Value>N</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-08T16:34:30"><controller name="ExpenseAllocMaster" />
+<field name="Isactive" />
+<update>
+  <ItemsStyle>RadioButtonList</ItemsStyle>
+</update></c><c y="NodeSet" t="2019-04-08T16:36:05"><controller name="ExpenseAllocMaster" />
+<field name="Isactive" />
+<update>
+  <Label>Active?</Label>
+</update></c><c y="NodeSet" t="2019-04-08T16:36:51"><controller name="ExpenseAllocMaster" />
+<field name="CreditGlcode" />
+<update>
+  <Label>Credit GL Code</Label>
+</update></c><c y="NodeSet" t="2019-04-09T10:17:29"><controller name="ExpenseallocmasterCertifydeptcodes" />
+<view id="grid1" />
+<update>
+  <Label>Certify Dept Codes</Label>
+</update></c><c y="NodeSet" t="2019-04-09T10:17:37"><controller name="ExpenseallocmasterCertifydeptcodes" />
+<view id="editForm1" />
+<update>
+  <Label>Review Certify Dept Codes</Label>
+</update></c><c y="NodeSet" t="2019-04-09T10:17:43"><controller name="ExpenseallocmasterCertifydeptcodes" />
+<view id="createForm1" />
+<update>
+  <Label>New Certify Dept Codes</Label>
+</update></c><c y="NodeSet" t="2019-04-09T11:02:13"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>1</Value>
+  <Text>Yes</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:02:19"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>0</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:02:31"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<update>
+  <ItemsStyle>RadioButtonList</ItemsStyle>
+</update></c><c y="NodeSet" t="2019-04-09T11:02:43"><controller name="ExpenseCertifyDept" />
+<view id="grid1" />
+<dataField fieldName="Decscription" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="grid1" />
+  <dataField fieldName="isActive" />
+</move></c><c y="NodeSet" t="2019-04-09T11:03:42"><controller name="ExpenseCertifyDept" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="Decscription" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="isActive" />
+</move></c><c y="NodeSet" t="2019-04-09T11:03:59"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="isActive" />
+<delete /></c><c y="NodeSet" t="2019-04-09T11:04:12"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<dataField fieldName="CreatedDate" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-09T11:04:20"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<dataField fieldName="CreatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-09T11:09:50"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<item value="0" />
+<delete /></c><c y="NodeSet" t="2019-04-09T11:10:02"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>0</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:13:03"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<item value="1" />
+<delete /></c><c y="NodeSet" t="2019-04-09T11:13:06"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<item value="0" />
+<delete /></c><c y="NodeSet" t="2019-04-09T11:13:16"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>True</Value>
+  <Text>Yes</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:13:26"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>False</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:14:00"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<update>
+  <ItemsStyle>RadioButtonList</ItemsStyle>
+</update></c><c y="NodeSet" t="2019-04-09T11:15:14"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<update>
+  <ItemsStyle>DropDownList</ItemsStyle>
+</update></c><c y="NodeSet" t="2019-04-09T11:17:41"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<item value="True" />
+<delete /></c><c y="NodeSet" t="2019-04-09T11:17:46"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<item value="False" />
+<delete /></c><c y="NodeSet" t="2019-04-09T11:19:05"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>Y</Value>
+  <Text>Yes</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:19:12"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<insert type="item">
+  <Value>N</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-09T11:19:21"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<update>
+  <ItemsStyle>RadioButtonList</ItemsStyle>
+</update></c><c y="NodeSet" t="2019-04-09T11:21:07"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<category id="c1" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="isActive" />
+</move></c><c y="NodeSet" t="2019-04-09T11:21:10"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="Decscription" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="isActive" />
+</move></c><c y="NodeSet" t="2019-04-09T11:24:52"><controller name="ExpenseCertifyDept" />
+<view id="grid1" />
+<dataField fieldName="CreatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-09T11:25:59"><controller name="ExpenseCertifyDept" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Audit</HeaderText>
+  <Flow>NewRow</Flow>
+</insert></c><c y="NodeSet" t="2019-04-09T11:26:09"><controller name="ExpenseCertifyDept" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedDate" />
+</move></c><c y="NodeSet" t="2019-04-09T11:26:09"><controller name="ExpenseCertifyDept" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedBy" />
+</move></c><c y="NodeSet" t="2019-04-09T11:27:22"><controller name="ExpenseCertifyDept" />
+<field name="isActive" />
+<update>
+  <Label>is Active?</Label>
+</update></c><c y="NodeSet" t="2019-04-09T12:19:44"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:19:44"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCodeCreatedby" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:19:44"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCodeIsactive" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:19:58"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:20:03"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCodeCreatedby" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:20:03"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCodeIsactive" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:20:48"><controller name="ExpenseAllocMaster" />
+<field name="fkCertifyDeptCode" />
+<update>
+  <ItemsDataTextField>CertifyDeptCode</ItemsDataTextField>
+</update></c><c y="NodeSet" t="2019-04-09T12:21:05"><controller name="ExpenseAllocMaster" />
+<field name="fkCertifyDeptCode" />
+<update>
+  <ItemsDataView>grid1</ItemsDataView>
+</update></c><c y="NodeSet" t="2019-04-09T12:21:23"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<copy>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</copy></c><c y="NodeSet" t="2019-04-09T12:21:26"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="grid1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:21:29"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="grid1" />
+  <dataField fieldName="AllocationCompanyCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:21:32"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="AllocationCompanyCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:22:16"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCodeCreatedby" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:22:17"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCodeIsactive" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:22:20"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:22:23"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="AllocationCompanyCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:22:30"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="grid1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:22:34"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-09T12:27:30"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:27:41"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <field name="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:27:45"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="grid1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:31:15"><controller name="ExpenseCertifyDept" />
+<view id="grid1" />
+<dataField fieldName="Description" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:31:26"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="CertifyDeptCode" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="Description" />
+</move></c><c y="NodeSet" t="2019-04-09T12:31:32"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="Description" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="isActive" />
+</move></c><c y="NodeSet" t="2019-04-09T12:31:43"><controller name="ExpenseCertifyDept" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="CertifyDeptCode" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="isActive" />
+</move></c><c y="NodeSet" t="2019-04-09T12:33:12"><controller name="ExpenseAllocMaster" />
+<view id="grid1" />
+<dataField fieldName="fkCertifyDeptCodeDescription" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:33:25"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCodeDescription" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:33:29"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCodeDescription" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:33:58"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:34:01"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<delete /></c><c y="NodeSet" t="2019-04-09T12:34:06"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<copy>
+  <controller name="ExpenseAllocMaster" />
+  <view id="grid1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</copy></c><c y="NodeSet" t="2019-04-09T12:34:10"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="CompanyBankCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:34:13"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:34:15"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:34:18"><controller name="ExpenseAllocMaster" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="AllocationCompanyCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:34:22"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<copy>
+  <controller name="ExpenseAllocMaster" />
+  <view id="grid1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</copy></c><c y="NodeSet" t="2019-04-09T12:34:27"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="AllocationCompanyCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="fkCertifyDeptCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:34:30"><controller name="ExpenseAllocMaster" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="fkCertifyDeptCode" />
+<move>
+  <controller name="ExpenseAllocMaster" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="AllocationCompanyCode" />
+</move></c><c y="NodeSet" t="2019-04-09T12:36:08"><controller name="ExpenseCertifyDept" />
+<view id="grid1" />
+<update>
+  <FilterExpression>isActive = 'Y'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-09T12:36:22"><controller name="ExpenseCertifyDept" />
+<copy>
+  <controller name="ExpenseCertifyDept" />
+  <view id="grid1" />
+</copy></c><c y="NodeSet" t="2019-04-09T12:36:30"><controller name="ExpenseCertifyDept" />
+<view id="grid1" />
+<rename>gridAll</rename></c><c y="NodeSet" t="2019-04-09T12:36:41"><controller name="ExpenseCertifyDept" />
+<view id="v100" />
+<rename>gridActive</rename></c><c y="NodeSet" t="2019-04-09T12:36:53"><controller name="ExpenseCertifyDept" />
+<view id="gridAll" />
+<update>
+  <FilterExpression />
+</update></c><c y="NodeSet" t="2019-04-09T12:37:16"><controller name="ExpenseCertifyDept" />
+<view id="gridActive" />
+<update>
+  <Label>Active Expense Certify Dept Codes</Label>
+</update></c><c y="NodeSet" t="2019-04-09T12:37:43"><controller name="ExpenseAllocMaster" />
+<field name="fkCertifyDeptCode" />
+<update>
+  <ItemsDataView>gridActive</ItemsDataView>
+</update></c><c y="NodeSet" t="2019-04-09T12:37:53"><controller name="ExpenseAllocMaster" />
+<field name="fkCertifyDeptCode" />
+<update>
+  <Copy />
+</update></c><c y="NodeSet" t="2019-04-09T12:40:53"><controller name="ExpenseCertifyDept" />
+<view id="gridAll" />
+<update>
+  <Label>All Expense Certify Dept Codes</Label>
+</update></c><c y="NodeSet" t="2019-04-09T13:00:20"><controller name="ExpenseCertifyDept" />
+<view id="gridAll" />
+<copy>
+  <controller name="ExpenseCertifyDept" />
+  <field name="Description" />
+</copy></c><c y="NodeSet" t="2019-04-09T13:02:21"><controller name="ExpenseCertifyDept" />
+<view id="gridAll" />
+<copy>
+  <controller name="ExpenseCertifyDept" />
+  <field name="Description" />
+</copy></c><c y="NodeSet" t="2019-04-09T13:02:24"><controller name="ExpenseCertifyDept" />
+<view id="gridAll" />
+<dataField fieldName="CertifyDeptCode" />
+<move>
+  <controller name="ExpenseCertifyDept" />
+  <view id="gridAll" />
+  <dataField fieldName="Description" />
+</move></c><c y="NodeSet" t="2019-04-09T13:02:30"><controller name="ExpenseCertifyDept" />
+<view id="gridAll" />
+<dataField fieldName="Description" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c></log><log type="Application"><c y="NodeSet" t="2019-04-09T10:16:55"><page name="ExpenseallocmasterCertifydeptcodes" />
+<update>
+  <UseExtenders>false</UseExtenders>
+  <Offline>false</Offline>
+  <Title>Certify Dept Codes</Title>
+  <Description>View Certify Dept Codes</Description>
+  <About>This page allows Certify Dept Codes management.</About>
+</update></c><c y="NodeSet" t="2019-04-09T10:18:02"><page name="ExpenseallocmasterCertifydeptcodes" />
+<rename>Certify Dept Codes</rename></c><c y="NodeSet" t="2019-04-09T12:36:30"><pages />
+<renameRefs type="view">
+  <Controller>ExpenseCertifyDept</Controller>
+  <Name>grid1</Name>
+  <NewName>gridAll</NewName>
+</renameRefs></c><c y="NodeSet" t="2019-04-09T13:07:34"><page name="SiteContent" />
+<update>
+  <UseExtenders>false</UseExtenders>
+  <Offline>true</Offline>
+</update></c><c y="NodeSet" t="2019-04-09T13:08:57"><page name="SiteContent" />
+<configure type="Exclude" /></c><c y="NodeSet" t="2019-04-09T13:09:20"><page name="SiteContent" />
+<configure type="Include" /></c><c y="NodeSet" t="2019-04-09T13:09:30"><page name="SiteContent" />
+<update>
+  <Offline>false</Offline>
+</update></c><c y="NodeSet" t="2019-04-09T13:09:50"><page name="SiteContent" />
+<delete /></c></log></logs>
